@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bhcc_webform_select_other.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bhcc_webform_select_other_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bhcc_webform_select_other module.
+    case 'help.page.bhcc_webform_select_other':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Select Other pattern for BHCC') . '</p>';
+      return $output;
+
+    default:
+  }
+}

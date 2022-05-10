@@ -1,0 +1,8 @@
+bhcc_webform_select_other_element:
+  version: VERSION
+  js:
+    js/webform.element.bhcc_select_other.js: {}
+  dependencies:
+    - webform/webform.element.other
+    - core/drupal
+    - core/jquery
