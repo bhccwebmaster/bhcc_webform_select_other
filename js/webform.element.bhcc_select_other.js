@@ -19,7 +19,7 @@
 
         var $select = $element.find('select');
         var $input = $element.find('.js-webform-select-other-input');
-        var $checkbox = $element.find('.js-bhcc-webform-select-other-checkbox');
+        var $checkbox = $element.find('.js-bhcc-webform-select-other-checkbox__checkbox');
         var $otherOption = $select.find('option[value="_other_"]');
 
         // If the checkbox is not checked.
