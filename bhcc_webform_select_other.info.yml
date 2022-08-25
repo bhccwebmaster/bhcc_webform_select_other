@@ -1,7 +1,7 @@
 name: 'BHCC Webform Select Other'
 type: module
 description: 'Select Other pattern for BHCC'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 package: 'BHCC Webform'
 dependencies:
   - webform:webform
