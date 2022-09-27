@@ -62,7 +62,7 @@ class BHCCSelectOther extends WebformSelectOther implements WebformElementOtherI
       '#type' => 'webform_html_editor',
       '#title' => $this->t('Other option description'),
       '#description' => $this->t('Description / help text for the other option text box.'),
-      // '#value' => $form_state->getValue('other_option_description')['value'] ?? '',
+      /* '#value' => $form_state->getValue('other_option_description')['value'] ?? '',*/
       '#rows' => 3,
     ];
 
