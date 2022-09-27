@@ -35,8 +35,8 @@ class BHCCSelectOther extends WebformSelectOther {
       '#wrapper_attributes' => [
         'class' => [
           'bhcc-webform-select-other-checkbox',
-          'js-bhcc-webform-select-other-checkbox'
-        ]
+          'js-bhcc-webform-select-other-checkbox',
+        ],
       ],
     ];
 

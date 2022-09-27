@@ -2,7 +2,6 @@
 
 namespace Drupal\bhcc_webform_select_other\Plugin\WebformElement;
 
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\webform\Plugin\WebformElementOtherInterface;
 
 /**
@@ -15,4 +14,4 @@ use Drupal\webform\Plugin\WebformElementOtherInterface;
  *   category = @Translation("Options elements"),
  * )
  */
-class BHCCSelectOtherTextarea extends BHCCSelectOther implements WebformElementOtherInterface { }
+class BHCCSelectOtherTextarea extends BHCCSelectOther implements WebformElementOtherInterface {}
