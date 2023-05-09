@@ -14,7 +14,7 @@
    */
   Drupal.behaviors.bhcc_webform_select_other = {
     attach: function (context) {
-      $(context).find('.js-bhcc-webform-select-other').once('bhcc-webform-select-other').each(function () {
+      $(once('bhcc-webform-select-other', $(context).find('.js-bhcc-webform-select-other')))
         var $element = $(this);
 
         var $select = $element.find('select');
