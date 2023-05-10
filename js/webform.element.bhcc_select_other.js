@@ -2,8 +2,7 @@
  * @file
  * JavaScript behaviors for other elements.
  */
-
-(function ($, Drupal) {
+(function ($, Drupal, once) {
 
   'use strict';
 
@@ -14,7 +13,7 @@
    */
   Drupal.behaviors.bhcc_webform_select_other = {
     attach: function (context) {
-      $(once('bhcc-webform-select-other', $(context).find('.js-bhcc-webform-select-other')))
+      $(once('bhcc-webform-select-other', $(context).find('.js-bhcc-webform-select-other'))).each(function () {
         var $element = $(this);
 
         var $select = $element.find('select');
@@ -56,4 +55,4 @@
     }
   };
 
-})(jQuery, Drupal);
+})(jQuery, Drupal, once);
