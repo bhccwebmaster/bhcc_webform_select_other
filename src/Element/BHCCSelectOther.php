@@ -17,14 +17,10 @@ class BHCCSelectOther extends WebformSelectOther {
    */
   public static function processWebformOther(&$element, FormStateInterface $form_state, &$complete_form) {
 
-    // Get the parent element.
-    $element = parent::processWebformOther($element, $form_state, $complete_form);
-
     // Add the other checkbox.
     $element['_other_'] = [
       '#type' => 'checkbox',
       '#title' => $element['#other_checkbox_label'] ?? t('Option not listed above'),
-      '#weight' => '10',
       '#return_value' => '_other_',
       '#attributes' => [
         'class' => [
@@ -39,6 +35,9 @@ class BHCCSelectOther extends WebformSelectOther {
         ],
       ],
     ];
+
+    // Get the parent element.
+    $element = parent::processWebformOther($element, $form_state, $complete_form);
 
     // Set other option textbox label, description and placeholder.
     if (!empty($element['#other_option_label'])) {
