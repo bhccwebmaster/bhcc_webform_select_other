@@ -6,3 +6,4 @@ bhcc_webform_select_other_element:
     - webform/webform.element.other
     - core/drupal
     - core/jquery
+    - core/once
